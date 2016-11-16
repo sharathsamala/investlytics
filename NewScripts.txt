@@ -1,0 +1,234 @@
+
+
+
+CREATE TABLE USER_PARAMETER_INFO
+(
+  DATA_CREATE_DT          DATE,
+  LANGUAGE                VARCHAR(5  ),
+  LANG_CONFIDENCE         VARCHAR(5  ),
+  SENTIMENT               VARCHAR(5  ),
+  SENTIMENT_CONFIDENCE    VARCHAR(5  ),
+  AGE                     VARCHAR(5  ),
+  AGE_CONFIDENCE          VARCHAR(5  ),
+  GENDER                  VARCHAR(2  ),
+  GENDER_CONFIDENCE       VARCHAR(5  ),
+  CONCEPTS                VARCHAR(2000  ),
+  EDUCATION               VARCHAR(2  ),
+  EDUCATION_CONFIDENCE    VARCHAR(5  ),
+  PERSONALITY             VARCHAR(2  ),
+  PERSONALITY_CONFIDENCE  VARCHAR(5  ),
+  GENRE                   VARCHAR(20  ),
+  GENRE_CONFIDENCE        VARCHAR(5  ),
+  INPUT_TEXT              VARCHAR(2000  )
+);
+
+
+CREATE TABLE  PARAMETER_STATIC_ENTRIES
+(
+  SENTIMENT     VARCHAR(5  ),
+  AGE           VARCHAR(5  ),
+  GENDER        VARCHAR(2  ),
+  CONCEPTS      VARCHAR(2000  ),
+  EDUCATION     VARCHAR(2  ),
+  PERSONALITY   VARCHAR(2  ),
+  GENRE         VARCHAR(20  ),
+  INVESTMENT_1  VARCHAR(20  ),
+  INVESTMENT_2  VARCHAR(20  ),
+  INVESTMENT_3  VARCHAR(20  )
+);
+
+
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, CONCEPTS, EDUCATION, 
+    PERSONALITY, INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'f', 'Stocks Bonds Mutual Funds', '+', 
+    'E', 'Stocks', 'Bond', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, CONCEPTS, EDUCATION, 
+    PERSONALITY, INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'f', 'Gold RealEstate Forex', '+', 
+    'I', 'Gold', 'Real Estate', 'Forex');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, CONCEPTS, EDUCATION, 
+    PERSONALITY, INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'f', 'Stocks Bonds Forex', '-', 
+    'E', 'Stocks', 'Bonds', 'Forex');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, CONCEPTS, EDUCATION, 
+    PERSONALITY, INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'f', 'Real Estate Fixed Deposits Stocks', '-', 
+    'I', 'Real Estate', 'Fixed Deposits', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, CONCEPTS, EDUCATION, 
+    PERSONALITY, INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'm', 'Stocks Bonds Mutual Funds', '+', 
+    'E', 'Stocks', 'Bonds', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'm', '+', 'I', 
+    'Gold', 'Real Estate', 'Post Office Schemes');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'm', '-', 'E', 
+    'Stocks', 'Bonds', 'Forex');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25+', 'm', '-', 'I', 
+    'Real Estate', 'Fixed Deposits', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'f', '+', 'E', 
+    'Gold', 'Real Estate', 'Post Office Schemes');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'f', '+', 'I', 
+    'Post Office Schemes', 'Fixed Deposits', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'f', '-', 'E', 
+    'Stocks', 'Bonds', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'f', '-', 'I', 
+    'Real Estate', 'Fixed Deposists ', 'Bonds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'm', '+', 'E', 
+    'Gold', 'Endowment Plans', 'Post Office Schemes');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'm', '+', 'I', 
+    'Post Office', 'Fixed Deposit', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'm', '-', 'E', 
+    'Real Estate', 'Fixed Deposit', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('-1.0', '25-', 'm', '-', 'I', 
+    'Stocks', 'Bonds', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'f', '+', 'E', 
+    'Stocks', 'Bonds', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'f', '+', 'I', 
+    'Gold', 'Real Estate', 'Post Office Schemes');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'f', '-', 'E', 
+    'Bonds', 'Forex', 'Endowments');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'f', '-', 'I', 
+    'Real Estate', 'Fixed Deposits', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'm', '+', 'E', 
+    'Stocks', 'Forex', 'Bonds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'm', '+', 'I', 
+    'Gold', 'Real Estate', 'Post Office Schemes');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'm', '-', 'E', 
+    'Real Estate', 'Fixed Deposits', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25+', 'm', '-', 'I', 
+    'Stocks', 'Mutual Funds', 'Bonds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'f', '+', 'E', 
+    'Stocks', 'Bonds', 'Mutual Funds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'f', '+', 'I', 
+    'Insurance', 'Endowments', 'Fixed Deposits');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'f', '-', 'E', 
+    'Bonds', 'Forex', 'Endowment Plans');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'f', '-', 'I', 
+    'Real Estate', 'Fixed Deposits', 'Stocks');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'm', '+', 'E', 
+    'Real Estate', 'Stocks', 'Bonds');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'm', '+', 'I', 
+    'Insurance', 'Endowment Plans', 'Fixed Deposits');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'm', '-', 'E', 
+    'Stocks', 'Bonds', 'Forex');
+Insert into PARAMETER_STATIC_ENTRIES
+   (SENTIMENT, AGE, GENDER, EDUCATION, PERSONALITY, 
+    INVESTMENT_1, INVESTMENT_2, INVESTMENT_3)
+ Values
+   ('+1.0', '25-', 'm', '-', 'I', 
+    'Fixed Deposits', 'Insurance', 'Endowment Plans');
+COMMIT;
+
